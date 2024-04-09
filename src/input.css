@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: titleHilton;
+    src: url('../fuentes/FontsFree-Net-WT-Hilton-Script-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'titleHilton', sans-serif;
+    background-color: #ffe6f2; /* Rosa pastel */
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/567bc707b7434e58b0539654c65b040e.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Color negro con 50% de opacidad */
+    z-index: -1; /* Colocar detrás del contenido */
+}
+
+/* Estilos para el contenido del contenedor */
+.container {
+    position: relative; /* Asegurar que el contenido esté por encima de la capa semitransparente */
+    z-index: 1; /* Asegurar que el contenido esté por encima de la capa semitransparente */
+    color: white; /* Ajustar el color del texto para que contraste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+}
+
+
+.card{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name{
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.frase{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 0, 0.863);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bentoGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 800px;
+  }
+  .gridItem {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #ffbede;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  /* Ajustes para la disposición de los elementos */
+  .gridItem:nth-child(1) { grid-column: span 4; }
+  .gridItem:nth-child(2) { 
+    grid-column: span 1;
+    background-image: url('../assets/Cultivo-del-girasol.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover; 
+}
+  .gridItem:nth-child(3) {
+    position: relative;
+    grid-column: span 1;
+    background-image: url('../assets/disney-princess-sumo8ouvwh3qcfj2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+ }
+
+  .gridItem:nth-child(4) { 
+    grid-column: span 2;
+    background-image: url('../assets/9707e4497ffbc70a8f832bd29a56abc2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+ }
+  .gridItem:nth-child(5) { 
+    grid-column: span 3;
+    background-image: url('../assets/3fe8e10e0ff543830269dc0e802e1b7c.jpg');
+    background-size: cover;
+    background-position: center;
+    background-position-y: -6em;
+    background-repeat: no-repeat;
+    object-fit: cover;
+ }
+  .gridItem:nth-child(6) { 
+    grid-column: span 1;
+    background-image: url('../assets/HD-wallpaper-volleyball-love.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+ }
+  .gridItem:nth-child(7) { grid-column: span 4; }
+
+  
+  /* Especifica qué elementos tienen una imagen de fondo y deben mostrar la oscuridad */
+  .gridItem:nth-child(2)::before,
+  .gridItem:nth-child(3)::before,
+  .gridItem:nth-child(4)::before,
+  .gridItem:nth-child(5)::before,
+  .gridItem:nth-child(6)::before {
+    display: block;
+  }
+
+  .gridItem p {
+    position: relative;
+    z-index: 1;
+    color: white; /* O el color que contraste bien con tu fondo oscuro */
+    background-color: rgba(0, 0, 0, 0.644);
+    border-radius: 10px;   
+}
+
+.footerBento{
+    padding-top: 1em;
+}
+
+
+.explicacion{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 0, 0.925);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.blancaNieves{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ffbede;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+
+}
+
+
+.princess img{
+    width: 20em;
+    border-radius: 3em;
+}
+.princess h1{
+    font-family: 'titleHilton', sans-serif;
+}
+
+.cenicienta{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ffbede;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+
+}
+
+.rapunzel{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ffbede;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+
+}
+
+.tiana{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ffbede;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+
+}
+.containerConclusion{
+    
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    position: relative;
+
+}
+
+ .conclusion {
+    background-color: rgba(0, 0, 0, 0.548);
+} 
+
+
+
+
