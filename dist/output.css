@@ -554,162 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
-.fixed {
-  position: fixed;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.flex {
-  display: flex;
-}
-
-.h-7 {
-  height: 1.75rem;
-}
-
-.w-7 {
-  width: 1.75rem;
-}
-
-.w-96 {
-  width: 24rem;
-}
-
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.max-w-96 {
-  max-width: 24rem;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.overflow-auto {
-  overflow: auto;
-}
-
-.rounded-full {
-  border-radius: 9999px;
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-
-.text-blue-200 {
-  --tw-text-opacity: 1;
-  color: rgb(191 219 254 / var(--tw-text-opacity));
-}
-
-.text-blue-300 {
-  --tw-text-opacity: 1;
-  color: rgb(147 197 253 / var(--tw-text-opacity));
-}
-
-.text-pink-400 {
-  --tw-text-opacity: 1;
-  color: rgb(244 114 182 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 @font-face {
   font-family: titleHilton;
 
-  src: url('../fuentes/FontsFree-Net-WT-Hilton-Script-Regular.ttf') format('truetype');
+  src: url('/fuentes/FontsFree-Net-WT-Hilton-Script-Regular.ttf') format('truetype');
 }
 
 body {
@@ -718,7 +566,7 @@ body {
   /* Rosa pastel */
   margin: 0;
   padding: 0;
-  background-image: url('../assets/567bc707b7434e58b0539654c65b040e.jpg');
+  background-image: url('/assets/567bc707b7434e58b0539654c65b040e.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -810,7 +658,7 @@ body::after {
 
 .gridItem:nth-child(2) {
   grid-column: span 1;
-  background-image: url('../assets/Cultivo-del-girasol.png');
+  background-image: url('/assets/Cultivo-del-girasol.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -821,7 +669,7 @@ body::after {
 .gridItem:nth-child(3) {
   position: relative;
   grid-column: span 1;
-  background-image: url('../assets/disney-princess-sumo8ouvwh3qcfj2.jpg');
+  background-image: url('/assets/disney-princess-sumo8ouvwh3qcfj2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -831,7 +679,7 @@ body::after {
 
 .gridItem:nth-child(4) {
   grid-column: span 2;
-  background-image: url('../assets/9707e4497ffbc70a8f832bd29a56abc2.jpg');
+  background-image: url('/assets/9707e4497ffbc70a8f832bd29a56abc2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -841,7 +689,7 @@ body::after {
 
 .gridItem:nth-child(5) {
   grid-column: span 3;
-  background-image: url('../assets/3fe8e10e0ff543830269dc0e802e1b7c.jpg');
+  background-image: url('/assets/3fe8e10e0ff543830269dc0e802e1b7c.jpg');
   background-size: cover;
   background-position: center;
   background-position-y: -6em;
@@ -852,7 +700,7 @@ body::after {
 
 .gridItem:nth-child(6) {
   grid-column: span 1;
-  background-image: url('../assets/HD-wallpaper-volleyball-love.jpg');
+  background-image: url('/assets/HD-wallpaper-volleyball-love.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -965,6 +813,8 @@ body::after {
   height: 100vh;
   color: white;
   position: relative;
+  padding-inline: 20px;
+  text-align: center;
 }
 
 .conclusion {
